@@ -1,0 +1,144 @@
+<html>
+<title></title>
+<style type="text/css">
+body{background : #ccffff;}
+#sun{position:absolute;
+left:50%;
+top:20px;}
+#c1{position:relative;
+top:10;
+left:400px;}
+#c2{position:relative;
+top:100px;
+left:450px;}
+#c3{position:relative;
+top:-200px;
+left:500px;}
+#c4{position:relative;
+top:-200px;
+left:100px;}
+#r1{position:absolute;
+top:-400px;}
+#r2{position:absolute;
+top:-300px;}
+#r3{position:absolute;
+top:-200px;}
+#r4{position:absolute;
+top:-100px;}
+</style>
+<script>
+setInterval(rains,30);
+setInterval(clouds,40);
+
+var x=0;
+var y=450;
+var z=500;
+var zz=100;
+function clouds()
+{
+if(x<800)
+{
+x++;
+var cloud1 = document.getElementById("c1");
+cloud1.style.left = x*2 + "px";
+if(x==800)
+{  
+x=0;
+}
+}
+if(y<1000)
+{
+y++;
+var cloud2 = document.getElementById("c2");
+cloud2.style.left = y*2 + "px";
+if(y==800)
+{
+y=0;
+}
+}
+if(z<1000)
+{
+z++;
+var cloud3 = document.getElementById("c3");
+cloud3.style.left = z*2 + "px";
+if(z==800)
+{
+z=0;
+}
+}
+if(zz<1000)
+{
+zz++;
+var cloud4 = document.getElementById("c4");
+cloud4.style.left = zz*2 + "px";
+if(zz==800)
+{
+zz=0;
+}
+}
+}
+var y1=-400;
+var y2=-300;
+var y3=-200;
+var y4=-100;
+function rains()
+{
+if(y1<400)
+{
+y1++;
+var rain = document.getElementById("r1");
+rain.style.top = y1*2 + "px";
+if(y1==400)
+{
+y1=0;
+}
+}
+if(y2<400)
+{
+y2++;
+var rain = document.getElementById("r2");
+rain.style.top = y2*2 + "px";
+if(y2==400)
+{
+y2=0;
+}
+}
+if(y3<400)
+{
+y3++;
+var rain = document.getElementById("r3");
+rain.style.top = y3*2 + "px";
+if(y3==400)
+{
+y3=0;
+}
+}
+if(y4<400)
+{
+y4++;
+var rain = document.getElementById("r4");
+rain.style.top = y4*2 + "px";
+if(y4==400)
+{
+y4=0;
+}
+}
+}
+
+</script>
+
+
+<body>
+<div id="sun"><img src="https://image.flaticon.com/icons/svg/890/890347.svg" height="100"/></div>
+<div id="c1"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-12/256/cloud-icon.png" height="100"></img></div>
+<div id="c2"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-12/256/cloud-icon.png" height="150"></img><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-12/256/cloud-icon.png" height="100"></img></div>
+<div id="c3"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-12/256/cloud-icon.png" height="150"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-12/256/cloud-icon.png"height="120"></img></div>
+<div id="c4"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-12/256/cloud-icon.png" height="110"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-12/256/cloud-icon.png" height="140"></img></div>
+<div id="r1"><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img></div>
+<div id="r2"><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img></div>
+<div id="r3"><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img></div>
+<div id="r4"><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img><img src="https://freepngimg.com/download/rain/2-2-rain-drops-falling-png.png" height="150"></img></div>
+
+
+</body>
+</html>

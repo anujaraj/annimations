@@ -1,0 +1,36 @@
+<html>
+<titlt>
+</title>
+<style type="text/css">
+body{background-color:black;}
+#sun{position:absolute;
+top:40%;
+left:40%;
+border-radius:100%;}
+#earth{position:relative;
+top:300px;
+}
+</style>
+<script>
+setInterval(revolve,30);
+var t=0;
+
+var w=3.14/90;
+function revolve()
+{
+t++;
+var e = document.getElementById("earth");
+earth.style.left =400* Math.sin(w*t) +600+ "px";
+earth.style.top =230* Math.cos(w*t) +300+ "px";
+}
+</script>
+<body>
+
+<div id="earth">
+<img src="https://image.flaticon.com/icons/svg/814/814476.svg" height="50">
+</div>
+<div id="sun">
+<img src="https://cdn.pixabay.com/photo/2012/01/09/09/10/sun-11582_960_720.jpg" height="180" >
+</div>
+</body>
+</html>
